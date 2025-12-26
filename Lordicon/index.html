@@ -1,0 +1,77 @@
+ <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lordicon Gallery - Professional Icon Collection</title>
+    <link rel="preconnect" ';'="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">Icon Gallery</h1>
+                    <p class="tagline">Premium Animated Icons Collection</p>
+                </div>
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search icons..."
+                            aria-label="Search icons">
+                        <button id="clearSearch" class="clear-btn" aria-label="Clear search" style="display: none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="gallery-app">
+            <div class="stats-bar">
+                <span id="iconCount" class="stat-item">8 Icons</span>
+                <span class="stat-divider">•</span>
+                <span class="stat-item">Click to animate</span>
+            </div>
+
+            <section id="gallery" class="gallery" aria-live="polite">
+                <div class="loading-state" id="loadingState">
+                    <div class="spinner"></div>
+                    <p>Loading icons...</p>
+                </div>
+            </section>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <h3>No icons found</h3>
+                <p>Try adjusting your search terms</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by <a href="https://lordicon.com" target="_blank" rel="noopener noreferrer">Lordicon</a></p>
+            <p class="footer-subtitle">Premium animated icons for modern interfaces</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
